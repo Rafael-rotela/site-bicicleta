@@ -1,0 +1,571 @@
+[1mdiff --git a/CSS/index.css b/CSS/index.css[m
+[1mindex 7cdfa9c..4dd179a 100644[m
+[1m--- a/CSS/index.css[m
+[1m+++ b/CSS/index.css[m
+[36m@@ -16,11 +16,112 @@[m
+     /* background-color: chartreuse; */[m
+ }[m
+ #img-main{[m
+[31m-    height: 600px;[m
+[32m+[m[32m    height: 500px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#img-main:hover{[m
+[32m+[m[32m    filter:  drop-shadow( 0 0 3px rgb(224, 0, 71));[m
+ }[m
+ [m
+ .titulo-site{[m
+     font-size: 62px;[m
+     color: var(--cor-letra-titulo);[m
+     font-weight:  800;[m
+[32m+[m[32m}[m
+[32m+[m[32m.area-gif{[m
+[32m+[m[32m    width: 100%;[m
+[32m+[m[32m    height: 1500px;[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    background-image: url('../IMG/imagem_gif.gif');[m
+[32m+[m[32m    background-repeat: no-repeat;[m
+[32m+[m[32m    background-size: cover;[m
+[32m+[m[32m}[m
+[32m+[m[32m/* .area-gif img{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    width: 100%;[m
+[32m+[m[32m} */[m
+[32m+[m
+[32m+[m[32m.menu-card{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    flex-direction: column;[m
+[32m+[m[32m    justify-content: center;[m
+[32m+[m[32m    align-items: center;[m
+[32m+[m[32m    gap: 80px;[m
+[32m+[m[32m    padding-top: 50px;[m
+[32m+[m[32m}[m
+[32m+[m[32m.heading{[m
+[32m+[m[32m    font-size: 48px;[m
+[32m+[m[32m    color: var(--cor-letra-titulo);[m
+[32m+[m[32m    font-weight: 600;[m
+[32m+[m[32m}[m
+[32m+[m[32m.heading span{[m
+[32m+[m[32m    color: red;[m
+[32m+[m[32m}[m
+[32m+[m[32m.box-container{[m
+[32m+[m[32m    width: 100%;[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    flex-wrap: wrap;[m
+[32m+[m[32m    padding: 50px;[m
+[32m+[m[32m    gap: 30px;[m
+[32m+[m[32m    justify-content: center;[m
+[32m+[m[32m}[m
+[32m+[m[32m.box-card{[m
+[32m+[m[32m    width: 350px;[m
+[32m+[m[32m    height: 400px;[m
+[32m+[m[32m    background-color: rgba(56, 56, 190, 0.377);[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    flex-direction: column;[m
+[32m+[m[32m    align-items: center;[m
+[32m+[m[32m    justify-content: space-evenly;[m
+[32m+[m[32m}[m
+[32m+[m[32m.box-card  img{[m
+[32m+[m[32m    height: 50%;[m
+[32m+[m[32m}[m
+[32m+[m[32m.box-card h4{[m
+[32m+[m[32m    color: blue;[m
+[32m+[m[32m    font-size: 28px;[m
+[32m+[m[32m    font-weight: 600;[m
+[32m+[m[32m}[m
+[32m+[m[32m.price{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    font-size: 20px;[m
+[32m+[m[32m    color: rgba(100, 29, 29, 0.644);[m
+[32m+[m[32m    padding: 5px;[m
+[32m+[m[32m    gap: 15px;[m
+[32m+[m[32m    font-weight: 600;[m
+[32m+[m[32m}[m
+[32m+[m[32m.price span{[m
+[32m+[m[32m    font-size: 16px;[m
+[32m+[m[32m    color: gray;[m
+[32m+[m[32m    text-decoration: line-through;[m
+[32m+[m[32m    font-weight: lighter;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32m.box-card:hover{[m
+[32m+[m[32m    background-color: rgb(94, 127, 189);[m
+[32m+[m[32m    border: 3px solid rgba(107, 124, 172, 0.377);[m
+[32m+[m[32m    cursor: pointer;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mfooter{[m
+[32m+[m[32m    background-color: var(--cor-menu);[m
+[32m+[m[32m}[m
+[32m+[m[32m.footer-itens{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    flex-direction: column;[m
+[32m+[m[32m    justify-content: space-between;[m
+[32m+[m[32m    align-items: center;[m
+[32m+[m[32m    padding: 30px;[m
+[32m+[m[32m    height: 100px;[m
+[32m+[m[32m    width: 100%;[m
+[32m+[m[32m}[m
+[32m+[m[32m.copyright{[m
+[32m+[m[32m    color: var(--cor-letra-menu);[m
+[32m+[m[32m    font-size: 20px;[m
+[32m+[m[32m}[m
+[32m+[m[32m.social-media-buttons a{[m
+[32m+[m[32m    color: var(--cor-letra-menu);[m
+[32m+[m[32m    font-size: 22px;[m
+[32m+[m[32m}[m
+[32m+[m[32m.social-media-buttons a:hover{[m
+[32m+[m[32m    filter:  drop-shadow( 0 0 3px rgb(224, 0, 71));[m
+ }[m
+\ No newline at end of file[m
+[1mdiff --git a/CSS/menu.css b/CSS/menu.css[m
+[1mindex 3d4df00..b1a8eb4 100644[m
+[1m--- a/CSS/menu.css[m
+[1m+++ b/CSS/menu.css[m
+[36m@@ -3,7 +3,10 @@[m
+     background-color: var(--cor-menu);[m
+     height: 120px;[m
+     padding: 0px 2%;[m
+[31m-    box-shadow: 0px 10px 10px 5px  rgb(133, 241, 100);[m
+[32m+[m[32m    box-shadow: 0px 10px 10px 5px  rgb(232, 241, 100);[m
+[32m+[m[32m    top: 0px;[m
+[32m+[m[32m    z-index: 3;[m
+[32m+[m[32m    position: sticky;[m
+ }[m
+ [m
+ .nav-bar{[m
+[36m@@ -63,4 +66,4 @@[m
+ .btn:hover{[m
+     background-color: var(--cor-letra-titulo);[m
+     box-shadow: 0px 10px 10px 5px rgb(133, 241, 100);[m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m}[m
+[1mdiff --git a/CSS/style.css b/CSS/style.css[m
+[1mindex 81f47dc..d4fe484 100644[m
+[1m--- a/CSS/style.css[m
+[1m+++ b/CSS/style.css[m
+[36m@@ -6,8 +6,8 @@[m
+ @import url('index.css');[m
+ [m
+ :root{[m
+[31m-    --cor-menu: rgb(31, 31, 31);[m
+[31m-    --cor-letra-menu: rgb(236, 126, 126);[m
+[32m+[m[32m    --cor-menu: rgb(0, 0, 0);[m
+[32m+[m[32m    --cor-letra-menu: rgb(255, 255, 255);[m
+     --cor-letra-titulo: rgb(24, 54, 119);[m
+     --cor-botao-login: rgb(12, 48, 146);[m
+ [m
+[1mdiff --git a/PAGES/Cadastro.html b/PAGES/Cadastro.html[m
+[1mindex e69de29..10c2187 100644[m
+[1m--- a/PAGES/Cadastro.html[m
+[1m+++ b/PAGES/Cadastro.html[m
+[36m@@ -0,0 +1,55 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="pt-br">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>BIKE 544</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="../CSS/style.css">[m
+[32m+[m
+[32m+[m[32m    <!-- LINK -->[m
+[32m+[m[32m    <link rel="stylesheet" href="CSS/style.css">[m
+[32m+[m[32m    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />[m
+[32m+[m[41m    [m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <header class="menu">[m
+[32m+[m[32m        <nav class="nav-bar">[m
+[32m+[m[32m            <a href="../index.html" class="box-logo">[m
+[32m+[m[32m                <img src="../IMG/cara na bike.webp" alt="Logo do site Bike 544" id="logo" width="100" height="100" >[m
+[32m+[m[32m            </a>[m
+[32m+[m[32m            <ul class="nav-menu">[m
+[32m+[m[32m                <li class="nav-item">[m
+[32m+[m[32m                    <a href="../index.html" class="nav-link">HOME</a>[m
+[32m+[m[32m                </li>[m[41m                [m
+[32m+[m[32m                <li class="nav-item">[m
+[32m+[m[32m                    <a href="Produtos.html" class="nav-link">PRODUTOS</a>[m
+[32m+[m[32m                </li>[m[41m                [m
+[32m+[m[32m                <li class="nav-item">[m
+[32m+[m[32m                    <a href="Cadastro.html" class="nav-link">CADASTRO</a>[m
+[32m+[m[32m                </li>[m[41m                [m
+[32m+[m[32m                <li class="nav-item">[m
+[32m+[m[32m                    <a href="Contato.html" class="nav-link">CONTATO</a>[m
+[32m+[m[32m                </li>[m[41m           [m
+[32m+[m[32m            </ul>[m
+[32m+[m[32m            <a href="Login.html"><button class="btn" id="Login">LOGIN</button></a>[m
+[32m+[m[32m        </nav>[m
+[32m+[m[32m    </header>[m[41m [m
+[32m+[m
+[32m+[m[32m    <main>[m
+[32m+[m[32m        <img src="../IMG/imagem_gif.gif" alt="">[m
+[32m+[m[32m    </main>[m
+[32m+[m
+[32m+[m[32m    <footer>[m
+[32m+[m[32m        <div class="footer-itens">[m
+[32m+[m[32m            <span class="copyright">[m
+[32m+[m[32m                &copy 2026 Rafael Rotela[m
+[32m+[m[32m            </span>[m
+[32m+[m[32m            <div class="social-media-buttons">[m
+[32m+[m[32m                <a href=""><i class="fa-brands fa-whatsapp"></i></a>[m
+[32m+[m[32m                <a href="https://www.instagram.com/rafael_rotela/" target="_blank"><i class="fa-brands fa-instagram"></i></a>[m
+[32m+[m[32m                <a href="https://www.linkedin.com/in/rafael-rotela-0986b1356/" target="_blank"><i class="fa-brands fa-square-linkedin" ></i></a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </footer>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/PAGES/Contato.html b/PAGES/Contato.html[m
+[1mindex e69de29..8bd6890 100644[m
+[1m--- a/PAGES/Contato.html[m
+[1m+++ b/PAGES/Contato.html[m
+[36m@@ -0,0 +1,56 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="pt-br">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>BIKE 544</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="../CSS/style.css">[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    <!-- LINKS -->[m
+[32m+[m[32m    <link rel="stylesheet" href="CSS/style.css">[m
+[32m+[m[32m    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />[m
+[32m+[m[41m    [m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <header class="menu">[m
+[32m+[m[32m        <nav class="nav-bar">[m
+[32m+[m[32m            <a href="../index.html" class="box-logo">[m
+[32m+[m[32m                <img src="../IMG/cara na bike.webp" alt="Logo do site Bike 544" id="logo" width="100" height="100" >[m
+[32m+[m[32m            </a>[m
+[32m+[m[32m            <ul class="nav-menu">[m
+[32m+[m[32m                <li class="nav-item">[m
+[32m+[m[32m                    <a href="../index.html" class="nav-link">HOME</a>[m
+[32m+[m[32m                </li>[m[41m                [m
+[32m+[m[32m                <li class="nav-item">[m
+[32m+[m[32m                    <a href="Produtos.html" class="nav-link">PRODUTOS</a>[m
+[32m+[m[32m                </li>[m[41m                [m
+[32m+[m[32m                <li class="nav-item">[m
+[32m+[m[32m                    <a href="Cadastro.html" class="nav-link">CADASTRO</a>[m
+[32m+[m[32m                </li>[m[41m                [m
+[32m+[m[32m                <li class="nav-item">[m
+[32m+[m[32m                    <a href="Contato.html" class="nav-link">CONTATO</a>[m
+[32m+[m[32m                </li>[m[41m           [m
+[32m+[m[32m            </ul>[m
+[32m+[m[32m            <a href="Login.html"><button class="btn" id="Login">LOGIN</button></a>[m
+[32m+[m[32m        </nav>[m
+[32m+[m[32m    </header>[m[41m [m
+[32m+[m
+[32m+[m[32m    <main>[m
+[32m+[m[32m        <img src="../IMG/imagem_gif.gif" alt="">[m
+[32m+[m[32m    </main>[m
+[32m+[m
+[32m+[m[32m    <footer>[m
+[32m+[m[32m        <div class="footer-itens">[m
+[32m+[m[32m            <span class="copyright">[m
+[32m+[m[32m                &copy 2026 Rafael Rotela[m
+[32m+[m[32m            </span>[m
+[32m+[m[32m            <div class="social-media-buttons">[m
+[32m+[m[32m                <a href=""><i class="fa-brands fa-whatsapp"></i></a>[m
+[32m+[m[32m                <a href="https://www.instagram.com/rafael_rotela/" target="_blank"><i class="fa-brands fa-instagram"></i></a>[m
+[32m+[m[32m                <a href="https://www.linkedin.com/in/rafael-rotela-0986b1356/" target="_blank"><i class="fa-brands fa-square-linkedin" ></i></a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </footer>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/PAGES/Produtos.html b/PAGES/Produtos.html[m
+[1mindex e69de29..6b0a3d8 100644[m
+[1m--- a/PAGES/Produtos.html[m
+[1m+++ b/PAGES/Produtos.html[m
+[36m@@ -0,0 +1,54 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>BIKE 544</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="../CSS/style.css">[m
+[32m+[m
+[32m+[m[32m    <!-- LINKS -->[m
+[32m+[m[32m    <link rel="stylesheet" href="CSS/style.css">[m
+[32m+[m[32m    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m     <header class="menu">[m
+[32m+[m[32m        <nav class="nav-bar">[m
+[32m+[m[32m            <a href="index.html" class="box-logo">[m
+[32m+[m[32m                <img src="../IMG/cara na bike.webp" alt="Logo do site Bike 544" id="logo" width="100" height="100" >[m
+[32m+[m[32m            </a>[m
+[32m+[m[32m            <ul class="nav-menu">[m
+[32m+[m[32m                <li class="nav-item">[m
+[32m+[m[32m                    <a href="index.html" class="nav-link">HOME</a>[m
+[32m+[m[32m                </li>[m[41m                [m
+[32m+[m[32m                <li class="nav-item">[m
+[32m+[m[32m                    <a href="PAGES/Produtos.html" class="nav-link">PRODUTOS</a>[m
+[32m+[m[32m                </li>[m[41m                [m
+[32m+[m[32m                <li class="nav-item">[m
+[32m+[m[32m                    <a href="PAGES/Cadastro.html" class="nav-link">CADASTRO</a>[m
+[32m+[m[32m                </li>[m[41m                [m
+[32m+[m[32m                <li class="nav-item">[m
+[32m+[m[32m                    <a href="PAGES/Contato.html" class="nav-link">CONTATO</a>[m
+[32m+[m[32m                </li>[m[41m           [m
+[32m+[m[32m            </ul>[m
+[32m+[m[32m            <a href="Login.html"><button class="btn" id="Login">LOGIN</button></a>[m
+[32m+[m[32m        </nav>[m
+[32m+[m[32m    </header>[m[41m [m
+[32m+[m
+[32m+[m[32m    <main>[m
+[32m+[m[32m        <img src="../IMG/imagem_gif.gif" alt="">[m
+[32m+[m[32m    </main>[m
+[32m+[m
+[32m+[m[32m    <footer>[m
+[32m+[m[32m        <div class="footer-itens">[m
+[32m+[m[32m            <span class="copyright">[m
+[32m+[m[32m                &copy 2026 Rafael Rotela[m
+[32m+[m[32m            </span>[m
+[32m+[m[32m            <div class="social-media-buttons">[m
+[32m+[m[32m                <a href=""><i class="fa-brands fa-whatsapp"></i></a>[m
+[32m+[m[32m                <a href="https://www.instagram.com/rafael_rotela/" target="_blank"><i class="fa-brands fa-instagram"></i></a>[m
+[32m+[m[32m                <a href="https://www.linkedin.com/in/rafael-rotela-0986b1356/" target="_blank"><i class="fa-brands fa-square-linkedin" ></i></a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </footer>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/README.md b/README.md[m
+[1mdeleted file mode 100644[m
+[1mindex f7b8f1e..0000000[m
+[1m--- a/README.md[m
+[1m+++ /dev/null[m
+[36m@@ -1,69 +0,0 @@[m
+[31m-# site-bicicleta[m
+[31m-# 🚲 Site Bike[m
+[31m-[m
+[31m-> Projeto desenvolvido durante o curso **Fábrica de Software**, ministrado pela professora **Enilda**.[m
+[31m-[m
+[31m----[m
+[31m-[m
+[31m-## 📚 Sobre o Projeto[m
+[31m-[m
+[31m-O **Site Bike** é um site temático sobre bicicletas, criado como parte das aulas práticas do curso Fábrica de Software. O projeto foi construído do zero, acompanhando o aprendizado progressivo de **HTML** e **CSS**, desde os conceitos mais básicos até a estruturação de páginas web completas.[m
+[31m-[m
+[31m----[m
+[31m-[m
+[31m-## 🎓 Contexto Acadêmico[m
+[31m-[m
+[31m-| Campo        | Informação              |[m
+[31m-|--------------|-------------------------|[m
+[31m-| 📖 Curso     | Fábrica de Software     |[m
+[31m-| 👩‍🏫 Professora | Enilda                  |[m
+[31m-| 🛠️ Tecnologias | HTML, CSS              |[m
+[31m-| 🎯 Tema      | Site Bike               |[m
+[31m-[m
+[31m----[m
+[31m-[m
+[31m-## 🛠️ Tecnologias Utilizadas[m
+[31m-[m
+[31m-- **HTML5** — Estrutura e marcação das páginas[m
+[31m-- **CSS3** — Estilização e layout visual[m
+[31m-[m
+[31m----[m
+[31m-[m
+[31m-## 📁 Estrutura do Projeto[m
+[31m-[m
+[31m-```[m
+[31m-site-bike/[m
+[31m-│[m
+[31m-├── index.html        # Página principal[m
+[31m-├── style.css         # Estilos globais[m
+[31m-├── img/              # Imagens do site[m
+[31m-└── README.md         # Documentação do projeto[m
+[31m-```[m
+[31m-[m
+[31m----[m
+[31m-[m
+[31m-## 💡 O que foi Aprendido[m
+[31m-[m
+[31m-Ao longo do desenvolvimento deste projeto, foram praticados os seguintes conceitos:[m
+[31m-[m
+[31m-- Estrutura básica de um documento HTML[m
+[31m-- Tags semânticas (`header`, `main`, `footer`, `section`, etc.)[m
+[31m-- Formatação de texto (títulos, parágrafos, listas)[m
+[31m-- Inserção de imagens e links[m
+[31m-- Estilização com CSS (cores, fontes, margens, padding)[m
+[31m-- Modelo de caixas (Box Model)[m
+[31m-- Layout e posicionamento de elementos[m
+[31m-[m
+[31m----[m
+[31m-[m
+[31m-## 🚀 Como Visualizar o Projeto[m
+[31m-[m
+[31m-1. Clone ou baixe este repositório[m
+[31m-2. Abra o arquivo `index.html` no seu navegador preferido[m
+[31m-3. Explore o site! 🚲[m
+[31m-[m
+[31m----[m
+[31m-[m
+[31m-## 👩‍💻 Desenvolvido por[m
+[31m-[m
+[31m-Feito com 💙 durante as aulas do curso **Fábrica de Software** com a professora **Enilda**.[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex a7b368d..4cdb329 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -1,10 +1,14 @@[m
+ <!DOCTYPE html>[m
+[31m-<html lang="en">[m
+[32m+[m[32m<html lang="pt-br">[m
+ <head>[m
+     <meta charset="UTF-8">[m
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+     <title>BIKE 544</title>[m
+     <link rel="stylesheet" href="CSS/style.css">[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    <!-- LINKS -->[m
+[32m+[m[32m    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />[m
+ </head>[m
+ <body>[m
+     <header class="menu">[m
+[36m@@ -24,7 +28,7 @@[m
+                 </li>                [m
+                 <li class="nav-item">[m
+                     <a href="PAGES/Contato.html" class="nav-link">CONTATO</a>[m
+[31m-                </li>                              [m
+[32m+[m[32m                </li>[m[41m           [m
+             </ul>[m
+             <a href="Login.html"><button class="btn" id="Login">LOGIN</button></a>[m
+         </nav>[m
+[36m@@ -39,5 +43,125 @@[m
+         </div>[m
+     </main>[m
+ [m
+[32m+[m[32m    <section class="area-gif">[m
+[32m+[m[41m    [m
+[32m+[m[32m    </section>[m
+[32m+[m
+[32m+[m[32m    <section class="menu-card">[m
+[32m+[m[32m        <h3 class="heading">NOSSOS <span>PRODUTOS</span></h3>[m
+[32m+[m[32m        <div class="box-container">[m
+[32m+[m[32m            <div class="box-card">[m
+[32m+[m[32m                <img src="IMG/cara deitado na bike.webp" alt="cara deitado em uma bike">[m
+[32m+[m[32m                <h4>BIKE KILL</h4>[m
+[32m+[m[32m                <div class="price">[m
+[32m+[m[32m                    R$1.500,00 <span>1.999,90</span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <a href=""><button class="btn">COMPRAR</button></a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="box-card">[m
+[32m+[m[32m                <img src="IMG/cara deitado na bike.webp" alt="cara deitado em uma bike">[m
+[32m+[m[32m                <h4>BIKE KILL</h4>[m
+[32m+[m[32m                <div class="price">[m
+[32m+[m[32m                    R$1.500,00 <span>1.999,90</span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <a href=""><button class="btn">COMPRAR</button></a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="box-card">[m
+[32m+[m[32m                <img src="IMG/cara deitado na bike.webp" alt="cara deitado em uma bike">[m
+[32m+[m[32m                <h4>BIKE KILL</h4>[m
+[32m+[m[32m                <div class="price">[m
+[32m+[m[32m                    R$1.500,00 <span>1.999,90</span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <a href=""><button class="btn">COMPRAR</button></a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="box-card">[m
+[32m+[m[32m                <img src="IMG/cara deitado na bike.webp" alt="cara deitado em uma bike">[m
+[32m+[m[32m                <h4>BIKE KILL</h4>[m
+[32m+[m[32m                <div class="price">[m
+[32m+[m[32m                    R$1.500,00 <span>1.999,90</span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <a href=""><button class="btn">COMPRAR</button></a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="box-card">[m
+[32m+[m[32m                <img src="IMG/cara deitado na bike.webp" alt="cara deitado em uma bike">[m
+[32m+[m[32m                <h4>BIKE KILL</h4>[m
+[32m+[m[32m                <div class="price">[m
+[32m+[m[32m                    R$1.500,00 <span>1.999,90</span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <a href=""><button class="btn">COMPRAR</button></a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="box-card">[m
+[32m+[m[32m                <img src="IMG/cara deitado na bike.webp" alt="cara deitado em uma bike">[m
+[32m+[m[32m                <h4>BIKE KILL</h4>[m
+[32m+[m[32m                <div class="price">[m
+[32m+[m[32m                    R$1.500,00 <span>1.999,90</span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <a href=""><button class="btn">COMPRAR</button></a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="box-card">[m
+[32m+[m[32m                <img src="IMG/cara deitado na bike.webp" alt="cara deitado em uma bike">[m
+[32m+[m[32m                <h4>BIKE KILL</h4>[m
+[32m+[m[32m                <div class="price">[m
+[32m+[m[32m                    R$1.500,00 <span>1.999,90</span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <a href=""><button class="btn">COMPRAR</button></a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="box-card">[m
+[32m+[m[32m                <img src="IMG/cara deitado na bike.webp" alt="cara deitado em uma bike">[m
+[32m+[m[32m                <h4>BIKE KILL</h4>[m
+[32m+[m[32m                <div class="price">[m
+[32m+[m[32m                    R$1.500,00 <span>1.999,90</span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <a href=""><button class="btn">COMPRAR</button></a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="box-card">[m
+[32m+[m[32m                <img src="IMG/cara deitado na bike.webp" alt="cara deitado em uma bike">[m
+[32m+[m[32m                <h4>BIKE KILL</h4>[m
+[32m+[m[32m                <div class="price">[m
+[32m+[m[32m                    R$1.500,00 <span>1.999,90</span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <a href=""><button class="btn">COMPRAR</button></a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="box-card">[m
+[32m+[m[32m                <img src="IMG/cara deitado na bike.webp" alt="cara deitado em uma bike">[m
+[32m+[m[32m                <h4>BIKE KILL</h4>[m
+[32m+[m[32m                <div class="price">[m
+[32m+[m[32m                    R$1.500,00 <span>1.999,90</span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <a href=""><button class="btn">COMPRAR</button></a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="box-card">[m
+[32m+[m[32m                <img src="IMG/cara deitado na bike.webp" alt="cara deitado em uma bike">[m
+[32m+[m[32m                <h4>BIKE KILL</h4>[m
+[32m+[m[32m                <div class="price">[m
+[32m+[m[32m                    R$1.500,00 <span>1.999,90</span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <a href=""><button class="btn">COMPRAR</button></a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="box-card">[m
+[32m+[m[32m                <img src="IMG/cara deitado na bike.webp" alt="cara deitado em uma bike">[m
+[32m+[m[32m                <h4>BIKE KILL</h4>[m
+[32m+[m[32m                <div class="price">[m
+[32m+[m[32m                    R$1.500,00 <span>1.999,90</span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <a href=""><button class="btn">COMPRAR</button></a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </section>[m
+[32m+[m
+[32m+[m[32m    <footer>[m
+[32m+[m[32m        <div class="footer-itens">[m
+[32m+[m[32m            <span class="copyright">[m
+[32m+[m[32m                &copy 2026 Rafael Rotela[m
+[32m+[m[32m            </span>[m
+[32m+[m[32m            <div class="social-media-buttons">[m
+[32m+[m[32m                <a href=""><i class="fa-brands fa-whatsapp"></i></a>[m
+[32m+[m[32m                <a href="https://www.instagram.com/rafael_rotela/" target="_blank"><i class="fa-brands fa-instagram"></i></a>[m
+[32m+[m[32m                <a href="https://www.linkedin.com/in/rafael-rotela-0986b1356/" target="_blank"><i class="fa-brands fa-square-linkedin" ></i></a>[m
+[32m+[m[32m                <a href="https://github.com/Rafael-rotela" target="_blank"><i class="fa-brands fa-github"></i></a>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </footer>[m
+[32m+[m
+ </body>[m
+ </html>[m
+\ No newline at end of file[m

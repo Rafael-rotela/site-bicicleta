@@ -16,11 +16,112 @@
     /* background-color: chartreuse; */
 }
 #img-main{
-    height: 600px;
+    height: 500px;
+}
+#img-main:hover{
+    filter:  drop-shadow( 0 0 3px rgb(224, 0, 71));
 }
 
 .titulo-site{
     font-size: 62px;
     color: var(--cor-letra-titulo);
     font-weight:  800;
+}
+.area-gif{
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    background-image: url('../IMG/imagem_gif.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .area-gif img{
+    display: flex;
+    width: 100%;
+} */
+
+.menu-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding-top: 50px;
+}
+.heading{
+    font-size: 48px;
+    color: var(--cor-letra-titulo);
+    font-weight: 600;
+}
+.heading span{
+    color: red;
+}
+.box-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 30px;
+    justify-content: center;
+}
+.box-card{
+    width: 350px;
+    height: 400px;
+    background-color: rgba(56, 56, 190, 0.377);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box-card  img{
+    height: 50%;
+}
+.box-card h4{
+    color: blue;
+    font-size: 28px;
+    font-weight: 600;
+}
+.price{
+    display: flex;
+    font-size: 20px;
+    color: rgba(100, 29, 29, 0.644);
+    padding: 5px;
+    gap: 15px;
+    font-weight: 600;
+}
+.price span{
+    font-size: 16px;
+    color: gray;
+    text-decoration: line-through;
+    font-weight: lighter;
+
+}
+.box-card:hover{
+    background-color: rgb(94, 127, 189);
+    border: 3px solid rgba(107, 124, 172, 0.377);
+    cursor: pointer;
+}
+
+footer{
+    background-color: var(--cor-menu);
+}
+.footer-itens{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    height: 100px;
+    width: 100%;
+}
+.copyright{
+    color: var(--cor-letra-menu);
+    font-size: 20px;
+}
+.social-media-buttons a{
+    color: var(--cor-letra-menu);
+    font-size: 22px;
+}
+.social-media-buttons a:hover{
+    filter:  drop-shadow( 0 0 3px rgb(224, 0, 71));
 }

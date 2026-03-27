@@ -6,8 +6,8 @@
 @import url('index.css');
 
 :root{
-    --cor-menu: rgb(31, 31, 31);
-    --cor-letra-menu: rgb(236, 126, 126);
+    --cor-menu: rgb(0, 0, 0);
+    --cor-letra-menu: rgb(255, 255, 255);
     --cor-letra-titulo: rgb(24, 54, 119);
     --cor-botao-login: rgb(12, 48, 146);
 

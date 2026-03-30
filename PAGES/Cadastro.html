@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 </head>
-<body>
+<body class="cadastro">
     <header class="menu">
+        
         <nav class="nav-bar">
             <a href="../index.html" class="box-logo">
                 <img src="../IMG/cara na bike.webp" alt="Logo do site Bike 544" id="logo" width="100" height="100" >
@@ -33,12 +34,68 @@
             </ul>
             <a href="Login.html"><button class="btn" id="Login">LOGIN</button></a>
         </nav>
+        
     </header> 
+    
+        <div class="box-cadastro">
+        <form action="">
+            <fieldset>
+                <legend><span>Formulário de Clientes</span></legend>
+                <div class="area-form">
 
-    <main>
-        <img src="../IMG/imagem_gif.gif" alt="">
-    </main>
-
+                    <div class="inputBox">
+                        <input type="text" name="nome" id="nome" class="inputUser" required>
+                        <label for="nome" class="labelInput">Nome Completo</label>
+                    </div>    
+                    <div class="inputBox">
+                        <input type="text" name="nome" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                    </div>    
+                    <div class="inputBox">
+                        <input type="tel" name="tel" id="tel" class="inputUser" required>
+                        <label for="tel" class="labelInput">Telefone</label>
+                    </div>
+                    <div class="genero">
+                        <p>Sexo:</p>
+                        <div class="opcao-genero">
+                            <input type="radio" name="genero" id="feminino" value="feminino" required> 
+                            <label for="feminino">Feminino</label>
+                        </div>
+                        <div class="opcao-genero">
+                            <input type="radio" name="genero" id="masculino" value="masculino" required> 
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div class="opcao-genero">
+                            <input type="radio" name="genero" id="outros" value="outros" required> 
+                            <label for="outros">Outros</label>
+                        </div>
+                    </div> 
+                    
+                    <div class="data-nasc">
+                        <label for="data_nascimento">Data de nascimento:</label>
+                        <input type="date" name="data_nascimento" id="data_nascimento" required>
+                    </div>
+                    
+                    <div class="inputBox">
+                        <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                        <label for="cidade" class="labelInput">Cidade</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="estado" id="estado" class="inputUser" required>
+                        <label for="estado" class="labelInput">Estado</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                        <label for="endereco"  class="labelInput">Endereço</label>
+                    </div>
+                    
+                    <input type="button" value="ENVIAR" name="submit" id="submit">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    
+    
     <footer>
         <div class="footer-itens">
             <span class="copyright">

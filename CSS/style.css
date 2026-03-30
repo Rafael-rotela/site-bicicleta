@@ -4,6 +4,7 @@
 
 @import url('menu.css');
 @import url('index.css');
+@import url('cadastro.css');
 
 :root{
     --cor-menu: rgb(0, 0, 0);

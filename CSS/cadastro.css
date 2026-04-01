@@ -1,11 +1,11 @@
 .cadastro{
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to right, rgb(110, 156, 101), rgba(0, 0, 0, 0.774));
+    /* background-image: linear-gradient(to right, rgb(110, 156, 101), rgba(0, 0, 0, 0.774)); */
 }
 
 .box-cadastro{
-    width: 30%;
+    width: 35%;
     background-color: blue;   
     color: aliceblue;
     position: absolute;
@@ -36,7 +36,7 @@ legend{
     outline: none;
     color: white;
     font-size: 15px;
-    width: 90%;
+    width: 100%;
     letter-spacing: 2px;
 }
 .labelInput{
@@ -63,7 +63,7 @@ legend{
 }
 
 #submit{
-    background-image: linear-gradient(to right, black,green);
+    /* background-image: linear-gradient(to right, black,green); */
     width: 50%;
     border: none;
     font-size:  15px;
@@ -75,7 +75,7 @@ legend{
     margin: auto;
 }
 #submit:hover{
-    background-image: linear-gradient(to right, green,black);
+    background-image: linear-gradient(to right, rgb(255, 255, 255),rgba(0, 0, 0, 0.075));
 }
 
 .area-form{

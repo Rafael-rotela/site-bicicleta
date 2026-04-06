@@ -1,0 +1,97 @@
+.login{
+    background-color: aquamarine;
+    display: flex;
+    max-height: 100vh;
+}
+.area-login{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+.area-login-foto{
+    width: 50%;
+    background-color: blue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.area-login-foto img{
+    height: 100%;
+    object-fit: cover;
+}
+.area-login-form{
+    width: 50%;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh   ;
+}
+.area-login-form form{
+    width: 300px;
+    height: 600px;
+    background-color: bisque;
+    padding: 10px;
+}
+.title-login{
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(3, 3, 37);
+    padding: 5px;
+}
+.area-input-login{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.label-login{
+    font-size: 1.2rem;
+    color: rgb(1, 1, 37);
+}
+.input-login{
+    border: none;
+    outline: none;
+    padding: 5px;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    background-color: rgba(240, 248, 255, 0.651);
+}
+.area-itens-logins{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.area-conectado{
+    display: flex;
+}
+.area-conectado input{
+    cursor: pointer;
+    margin-left: 5px;
+}
+.area-itens-logins p a{
+    color: white;
+}
+.btn-login{
+    display: flex;
+    padding: 10px;
+    background-color: beige;
+    width: 100px;
+    margin: auto;
+    border: none;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+}
+.area-itens-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.area-logar-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.area-itens-login img{
+    height: 20px;
+}
